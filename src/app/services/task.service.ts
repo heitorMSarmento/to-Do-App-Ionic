@@ -16,6 +16,7 @@ export class TaskService {
     date = date.replace("-", "/");
     let task : Task = {value: value, date: new Date(date), done: false};
     this.tasks.push(task);
+    console.log(this.tasks)
   }
 
   public delTask() {

@@ -7,7 +7,6 @@ import { TaskService } from '../services/task.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor(private taskService: TaskService) {}
 
   isToastOpen = false;
 
@@ -42,4 +41,5 @@ export class HomePage {
       max: '2023-31-12',
     },
   ];
+  constructor(public taskService: TaskService) {}
 }
